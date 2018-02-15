@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boss.app1.MainActivity">
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Convers Temperature!!"
+        android:textColor="#333300"
+        android:textStyle="bold"
+        android:textSize="30sp"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginTop="16dp"
+        android:background="#bfbfbf"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/bt1"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        />
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="16dp"
+        android:background="#ffbb33"
+        android:onClick="changeF"
+        android:text="calculate F°"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/edit1"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#bfbfbf"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/edit1"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffbb33"
+        android:gravity="center"
+        android:onClick="changeC"
+        android:text="calculate C°"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/edit2"
+        app:layout_constraintRight_toRightOf="@+id/t3"
+        app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#e6e6ff"
+        android:gravity="center"
+        android:text="Check status"
+        android:textSize="25sp"
+        android:textColor="#3333ff"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edit2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#e6e6ff"
+        android:gravity="center"
+        android:text="Please enter the number..."
+        android:textColor="#0066ff"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>
